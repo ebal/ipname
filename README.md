@@ -47,15 +47,18 @@ $ dig +short @ipname.me googleyahoo.com
 
 ## who it works
 
-dnsdist supports Lua, so we can use string.match for our pattern matching.
+dnsdist supports Lua via **LuaJIT**, so we can use string.match for our pattern matching.
 
 ```lua
 string.match(reply, "%d+%.%d+%.%d+%.%d+")
 ```
 
-The entire configuration is about 12lines !!! You can check it here: [dnsdist.conf](dnsdist.conf)
+then we access the FFI library, which allows calling external C functions and using C data structures from pure Lua code. And with the help of [INET_PTON](http://man7.org/linux/man-pages/man3/inet_pton.3.html), we can validate the IPv4 from the hostname!
 
-*Disclaimer*: This is not an IPv4 pattern matching, but works as proof of concept
+<br>
+The entire configuration is about 42lines!!! You can check it here: [dnsdist.conf](dnsdist.conf)
+
+*update*: 
 
 ## mentions
 
