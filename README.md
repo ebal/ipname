@@ -2,7 +2,8 @@
 
 hostnames for all
 
-**DNS**: `ipname.me`
+* **DNS** Server: `ipname.me`
+* site: https://www.ipname.me/
 
 ## description
 
