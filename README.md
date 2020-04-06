@@ -20,7 +20,7 @@ www.192-168-1-1-ipname.me ---> 192.168.1.1
 but
 
 ```
-thisisnotarealdomain.tld ---> 116.203.115.192
+thisisnotarealdomain.tld ---> 116.202.176.26
 ```
 
 ## dig examples
@@ -43,7 +43,7 @@ but
 
 ```sh
 $ dig +short @ipname.me googleyahoo.com
-116.203.115.192
+116.202.176.26
 ```
 
 ## who it works
